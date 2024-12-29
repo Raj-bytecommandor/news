@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized News Aggregator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
 
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #007bff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #news-container {
+      width: 100%;
+      max-width: 800px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    #news-container div {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      color: #343a40;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #6c757d;
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-size: 1rem;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+   
+    #news-container p {
+      font-size: 1.2rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Get the Latest News</h1>
+
+  <button id="refresh-news">Refresh News</button>
+
+  <div id="news-container">
+    <p>Click the button above to load the latest news.</p>
+  </div>
+
+  <script src="news.js"></script>
+
+</body>
+</html>
